@@ -1,5 +1,5 @@
 
-package com.libray.app;
+package com.libray.configuration;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -19,8 +19,8 @@ public class SpringFoxConfig {
 	@Bean
 	public Docket productApi() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.libray.controllers")).paths(regex("/employee.*"))
-				.build();
+		.apis(RequestHandlerSelectors.basePackage("com.libray.controllers")).paths(regex("/api.*"))
+		.build();
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.libray.app;
+package com.libray;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
